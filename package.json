@@ -1,6 +1,7 @@
 {
   "name": "@daaptickets/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "publish:patch": "npm version patch && npm publish --access public"
 }
