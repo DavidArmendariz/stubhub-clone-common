@@ -11,8 +11,7 @@
     "clean": "del ./build/*",
     "build": "yarn clean && tsc",
     "patch": "npm version patch",
-    "publish": "npm publish",
-    "publish:patch": "yarn patch && yarn build && yarn publish"
+    "publish:patch": "yarn patch && yarn build && npm publish"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
