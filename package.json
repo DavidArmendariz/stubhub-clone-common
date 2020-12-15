@@ -3,5 +3,13 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
-  "publish:patch": "npm version patch && npm publish --access public"
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "publish:patch": "npm version patch && npm publish --access public"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^4.1.3"
+  }
 }
