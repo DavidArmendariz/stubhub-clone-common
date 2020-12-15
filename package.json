@@ -9,9 +9,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "del ./build/*",
-    "build": "yarn clean && tsc",
-    "patch": "npm version patch",
-    "publish:patch": "yarn patch && yarn build && npm publish"
+    "build": "npm run clean && tsc",
+    "publish:patch": "npm version patch && npm run build && npm publish"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
