@@ -9,3 +9,5 @@ const color: Color = {
   blue: 10,
   green: 10,
 };
+
+export default color;
